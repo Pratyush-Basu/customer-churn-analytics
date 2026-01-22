@@ -203,3 +203,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+
+mlruns/
+models/*.pkl
+notebook/cm_plots/
+logs/
