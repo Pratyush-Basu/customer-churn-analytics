@@ -8,7 +8,12 @@ from feature_engineering import add_engineered_features
 # --------------------
 # Load model
 # --------------------
-model_bundle = joblib.load("../../models/final_churn_model.pkl")
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+model_path = BASE_DIR / "models" / "final_churn_model.pkl"
+
+model_bundle = joblib.load(model_path)
 model = model_bundle["model"]
 THRESHOLD = model_bundle["threshold"]
 
