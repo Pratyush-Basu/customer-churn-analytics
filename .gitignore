@@ -207,6 +207,5 @@ __marimo__/
 
 
 mlruns/
-models/*.pkl
 notebook/cm_plots/
 logs/
